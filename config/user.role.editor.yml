@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - path
+    - system
+    - toolbar
+id: editor
+label: 'Editor'
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'administer url aliases'
+  - 'create url aliases'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'

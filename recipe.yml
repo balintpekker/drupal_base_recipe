@@ -1,0 +1,77 @@
+name: 'Development Helper Recipe'
+description: 'A recipe containing modules and configuration to help the life of Drupal developers starting to work on a new project'
+type: 'Site'
+
+recipes: {}
+
+install:
+  - admin_toolbar
+  - allowed_formats
+  - big_pipe
+  - block
+  - breakpoint
+  - ckeditor5
+  - claro
+  - config
+  - config_filter
+  - config_ignore
+  - config_split
+  - config_translation
+  - content_translation
+  - contextual
+  - crop
+  - ctools
+  - dynamic_page_cache
+  - editor
+  - entity_legal
+  - eu_cookie_compliance
+  - field
+  - field_ui
+  - file
+  - filter
+  - image
+  - image_widget_crop
+  - imagick
+  - language
+  - layout_builder
+  - layout_discovery
+  - locale
+  - mailsystem
+  - media
+  - media_library
+  - migrate
+  - node
+  - page_cache
+  - path
+  - pathauto
+  - path_alias
+  - responsive_image
+  - role_delegation
+  - search_api
+  - search_api_solr
+  - smtp
+  - system
+  - text
+  - token
+  - toolbar
+  - transliterate_filenames
+  - user
+  - views
+  - views_ui
+
+config:
+  import:
+    media: '*'
+  actions:
+    system.theme:
+      simple_config_update:
+        default: 'claro'
+    user.role.editor:
+      ensure_exists:
+        label: 'Editor'
+      grantPermissions:
+        - 'create article content'
+        - 'delete any article content'
+        - 'edit any article content'
+
+content: {}

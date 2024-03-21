@@ -32,7 +32,8 @@
         "drupal/mail_safety": "^2.0",
         "drupal/string_field_formatter": "^2.0",
         "drupal/svg_image": "^3.0",
-        "drupal/webp": "^1.0@RC"
+        "drupal/webp": "^1.0@RC",
+        "composer/installers": "^2.2"
     },
     "license": "GPL-2.0-or-later"
 }
